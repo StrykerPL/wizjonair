@@ -14,82 +14,22 @@ interface PortfolioItem {
 const categories = [
   { id: "all", label: "Wszystkie" },
   { id: "fpv-interiors", label: "FPV Wnetrza" },
-  { id: "fpv-exteriors", label: "FPV Zewnetrza" },
-  { id: "cinematic-air", label: "Cinematic Air 3S" },
+  { id: "fpv-exteriors", label: "FPV Outdoor" },
   { id: "social-reels", label: "Social Media Reels" },
-  { id: "industrial", label: "Przemyslowe" },
 ]
 
-const portfolioItems: PortfolioItem[] = [
+interface PortfolioItemWithLocation extends PortfolioItem {
+  location?: string
+}
+
+const portfolioItems: PortfolioItemWithLocation[] = [
   {
     id: "1",
-    title: "Luksusowa Willa - Wnetrze",
-    category: "fpv-interiors",
-    thumbnail: "https://images.unsplash.com/photo-1600596542815-ffad4c1539a9?q=80&w=2075&auto=format&fit=crop",
-    videoUrl: "#",
-  },
-  {
-    id: "2",
-    title: "Nowoczesny Penthouse",
-    category: "fpv-interiors",
-    thumbnail: "https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?q=80&w=2053&auto=format&fit=crop",
-    videoUrl: "#",
-  },
-  {
-    id: "3",
-    title: "Rezydencja Nadmorska",
+    title: "Kąpielisko w Nowych Siołkowicach",
     category: "fpv-exteriors",
-    thumbnail: "https://images.unsplash.com/photo-1613490493576-7fde63acd811?q=80&w=2071&auto=format&fit=crop",
-    videoUrl: "#",
-  },
-  {
-    id: "4",
-    title: "Gorska Posiadlosc",
-    category: "fpv-exteriors",
-    thumbnail: "https://images.unsplash.com/photo-1512917774080-9991f1c4c750?q=80&w=2070&auto=format&fit=crop",
-    videoUrl: "#",
-  },
-  {
-    id: "5",
-    title: "Kinowe Ujecia Wybrzeza",
-    category: "cinematic-air",
-    thumbnail: "https://images.unsplash.com/photo-1507525428034-b723cf961d3e?q=80&w=2073&auto=format&fit=crop",
-    videoUrl: "#",
-  },
-  {
-    id: "6",
-    title: "Ekspedycja Alpejska",
-    category: "cinematic-air",
-    thumbnail: "https://images.unsplash.com/photo-1464822759023-fed622ff2c3b?q=80&w=2070&auto=format&fit=crop",
-    videoUrl: "#",
-  },
-  {
-    id: "7",
-    title: "Teaser Premiery Marki",
-    category: "social-reels",
-    thumbnail: "https://images.unsplash.com/photo-1611162616475-46b635cb6868?q=80&w=1974&auto=format&fit=crop",
-    videoUrl: "#",
-  },
-  {
-    id: "8",
-    title: "Promocja Hotelu",
-    category: "social-reels",
-    thumbnail: "https://images.unsplash.com/photo-1566073771259-6a8506099945?q=80&w=2070&auto=format&fit=crop",
-    videoUrl: "#",
-  },
-  {
-    id: "9",
-    title: "Zaklad Produkcyjny",
-    category: "industrial",
-    thumbnail: "https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?q=80&w=2070&auto=format&fit=crop",
-    videoUrl: "#",
-  },
-  {
-    id: "10",
-    title: "Farma Fotowoltaiczna",
-    category: "industrial",
-    thumbnail: "https://images.unsplash.com/photo-1509391366360-2e959784a276?q=80&w=2072&auto=format&fit=crop",
-    videoUrl: "#",
+    thumbnail: "https://img.youtube.com/vi/RkgRRS9xMk4/maxresdefault.jpg",
+    videoUrl: "https://youtu.be/RkgRRS9xMk4",
+    location: "Nowe Siołkowice",
   },
 ]
 
@@ -113,7 +53,7 @@ export function VideoPortfolio() {
             Nasze Realizacje
           </h2>
           <p className="mx-auto max-w-2xl text-lg font-light text-muted-foreground">
-            Odkryj nasza kolekcje kinowych ujec dronem w roznych kategoriach
+            Odkryj naszą kolekcję realizacji w różnych kategoriach
           </p>
         </div>
 
@@ -137,8 +77,11 @@ export function VideoPortfolio() {
         {/* Portfolio Grid */}
         <div className="grid gap-6 sm:grid-cols-2 lg:gap-8">
           {filteredItems.map((item, index) => (
-            <div
+            <a
               key={item.id}
+              href={item.videoUrl}
+              target="_blank"
+              rel="noopener noreferrer"
               className={`group relative aspect-video cursor-pointer overflow-hidden bg-card ${
                 index === 0 && filteredItems.length > 2 ? "sm:col-span-2 sm:aspect-[21/9]" : ""
               }`}
@@ -167,8 +110,13 @@ export function VideoPortfolio() {
                 <p className="mt-2 text-xs uppercase tracking-widest text-primary">
                   {categories.find((c) => c.id === item.category)?.label}
                 </p>
+                {item.location && (
+                  <p className="mt-1 text-xs font-light text-muted-foreground">
+                    {item.location}
+                  </p>
+                )}
               </div>
-            </div>
+            </a>
           ))}
         </div>
       </div>

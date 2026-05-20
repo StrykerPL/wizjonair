@@ -1,4 +1,4 @@
-import { Clapperboard, Building2, Video, Smartphone, Factory } from "lucide-react"
+import { Clapperboard, Building2, Smartphone } from "lucide-react"
 
 const services = [
   {
@@ -9,27 +9,15 @@ const services = [
   },
   {
     icon: Building2,
-    title: "FPV Zewnetrza",
+    title: "FPV Outdoor",
     description:
       "Dynamiczne ujecia zewnetrzne z niemozliwych katow, ukazujace skale i otoczenie nieruchomosci.",
-  },
-  {
-    icon: Video,
-    title: "Cinematic Air 3S",
-    description:
-      "Wysokorozdzielcza cinematografia z powietrza z DJI Air 3S dla zapierajacych dech ujec krajobrazowych i architektonicznych.",
   },
   {
     icon: Smartphone,
     title: "Social Media Reels",
     description:
       "Materialy w formacie pionowym zoptymalizowane pod Instagram, TikTok i inne platformy spolecznosciowe.",
-  },
-  {
-    icon: Factory,
-    title: "Przemyslowe",
-    description:
-      "Dokumentacja techniczna i materialy promocyjne dla produkcji, energetyki i infrastruktury.",
   },
 ]
 
