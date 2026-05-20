@@ -1,45 +1,20 @@
 "use client"
 
-import { useState } from "react"
-import { Instagram, Mail, MapPin, Loader2, CheckCircle } from "lucide-react"
+import { Instagram, Mail, MapPin } from "lucide-react"
 
 export function ContactSection() {
-  const [isSubmitting, setIsSubmitting] = useState(false)
-  const [isSuccess, setIsSuccess] = useState(false)
-  const [error, setError] = useState<string | null>(null)
-
-  async function handleSubmit(e: React.FormEvent<HTMLFormElement>) {
+  function handleSubmit(e: React.FormEvent<HTMLFormElement>) {
     e.preventDefault()
-    setIsSubmitting(true)
-    setError(null)
-
+    
     const formData = new FormData(e.currentTarget)
-    const data = {
-      name: formData.get("name") as string,
-      email: formData.get("email") as string,
-      message: formData.get("message") as string,
-    }
+    const name = formData.get("name") as string
+    const email = formData.get("email") as string
+    const message = formData.get("message") as string
 
-    try {
-      const response = await fetch("/api/contact", {
-        method: "POST",
-        headers: { "Content-Type": "application/json" },
-        body: JSON.stringify(data),
-      })
-
-      const result = await response.json()
-
-      if (!response.ok) {
-        throw new Error(result.error || "Wystąpił błąd")
-      }
-
-      setIsSuccess(true)
-      e.currentTarget.reset()
-    } catch (err) {
-      setError(err instanceof Error ? err.message : "Wystąpił błąd")
-    } finally {
-      setIsSubmitting(false)
-    }
+    const subject = encodeURIComponent(`Zapytanie od ${name}`)
+    const body = encodeURIComponent(`Imię i nazwisko: ${name}\nEmail: ${email}\n\nWiadomość:\n${message}`)
+    
+    window.location.href = `mailto:hello@wizjonair.pl?subject=${subject}&body=${body}`
   }
 
   return (
