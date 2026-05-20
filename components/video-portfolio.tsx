@@ -246,7 +246,11 @@ export function VideoPortfolio() {
     setSelectedVideo(null)
   }, [])
 
-  const currentUrl = typeof window !== "undefined" ? window.location.href : ""
+  const [currentUrl, setCurrentUrl] = useState("")
+  
+  useEffect(() => {
+    setCurrentUrl(window.location.href)
+  }, [])
 
   return (
     <>
