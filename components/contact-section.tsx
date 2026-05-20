@@ -11,11 +11,11 @@ export function ContactSection() {
               Kontakt
             </p>
             <h2 className="mb-6 text-4xl font-light tracking-tight text-foreground md:text-5xl">
-              Stworzmy Cos Razem
+              Stwórzmy coś razem!
             </h2>
             <p className="mb-12 max-w-lg text-lg font-light leading-relaxed text-muted-foreground">
-              Gotowy, by wyniesc swoj projekt na wyzszy poziom dzieki kinowym ujeciem dronem? 
-              Skontaktuj sie, by omowic swoja wizje.
+              Gotowy, by wynieść swój projekt na wyższy poziom dzięki ujeciom dronem? 
+              Skontaktuj się, by omówić swoją wizję.
             </p>
 
             {/* Contact Links */}
@@ -40,7 +40,7 @@ export function ContactSection() {
               </a>
 
               <a
-                href="mailto:hello@wizjonair.com"
+                href="mailto:hello@wizjonair.pl"
                 className="group flex items-center gap-4 transition-colors"
               >
                 <div className="flex h-12 w-12 items-center justify-center border border-border transition-all group-hover:border-primary group-hover:bg-primary/10">
@@ -51,7 +51,7 @@ export function ContactSection() {
                     Email
                   </p>
                   <p className="text-foreground transition-colors group-hover:text-primary">
-                    hello@wizjonair.com
+                    hello@wizjonair.pl
                   </p>
                 </div>
               </a>
@@ -65,7 +65,7 @@ export function ContactSection() {
                     Lokalizacja
                   </p>
                   <p className="text-foreground">
-                    Dostepni w Calej Polsce
+                    Realizacje w całej Polsce
                   </p>
                 </div>
               </div>
@@ -109,31 +109,10 @@ export function ContactSection() {
 
               <div>
                 <label
-                  htmlFor="project"
-                  className="mb-2 block text-sm font-light uppercase tracking-wider text-muted-foreground"
-                >
-                  Typ Projektu
-                </label>
-                <select
-                  id="project"
-                  name="project"
-                  className="w-full border border-border bg-background px-4 py-3 text-foreground focus:border-primary focus:outline-none"
-                >
-                  <option value="">Wybierz kategorie</option>
-                  <option value="fpv-interiors">FPV Wnetrza</option>
-                  <option value="fpv-exteriors">FPV Zewnetrza</option>
-                  <option value="cinematic-air">Cinematic Air 3S</option>
-                  <option value="social-reels">Social Media Reels</option>
-                  <option value="industrial">Przemyslowe</option>
-                </select>
-              </div>
-
-              <div>
-                <label
                   htmlFor="message"
                   className="mb-2 block text-sm font-light uppercase tracking-wider text-muted-foreground"
                 >
-                  Wiadomosc
+                  Wiadomość
                 </label>
                 <textarea
                   id="message"
@@ -148,7 +127,7 @@ export function ContactSection() {
                 type="submit"
                 className="w-full border border-primary bg-primary py-4 text-sm font-light uppercase tracking-widest text-primary-foreground transition-all hover:bg-transparent hover:text-primary"
               >
-                Wyslij Wiadomosc
+                Wyślij Wiadomość
               </button>
             </form>
           </div>
