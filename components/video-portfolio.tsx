@@ -7,8 +7,20 @@ interface PortfolioItem {
   id: string
   title: string
   category: string
-  thumbnail: string
+  thumbnail?: string
   videoUrl: string
+  location?: string
+}
+
+// Helper function to extract YouTube video ID and generate thumbnail
+function getYouTubeThumbnail(url: string): string {
+  const regExp = /^.*(youtu.be\/|v\/|u\/\w\/|embed\/|watch\?v=|&v=)([^#&?]*).*/
+  const match = url.match(regExp)
+  const videoId = match && match[2].length === 11 ? match[2] : null
+  if (videoId) {
+    return `https://img.youtube.com/vi/${videoId}/maxresdefault.jpg`
+  }
+  return ""
 }
 
 const categories = [
@@ -18,16 +30,11 @@ const categories = [
   { id: "social-reels", label: "Social Media Reels" },
 ]
 
-interface PortfolioItemWithLocation extends PortfolioItem {
-  location?: string
-}
-
-const portfolioItems: PortfolioItemWithLocation[] = [
+const portfolioItems: PortfolioItem[] = [
   {
     id: "1",
     title: "Kąpielisko w Nowych Siołkowicach",
     category: "fpv-exteriors",
-    thumbnail: "https://img.youtube.com/vi/RkgRRS9xMk4/maxresdefault.jpg",
     videoUrl: "https://youtu.be/RkgRRS9xMk4",
     location: "Nowe Siołkowice",
   },
@@ -50,7 +57,7 @@ export function VideoPortfolio() {
             Portfolio
           </p>
           <h2 className="mb-6 text-4xl font-light tracking-tight text-foreground md:text-5xl">
-            Nasze Realizacje
+            Nasze realizacje
           </h2>
           <p className="mx-auto max-w-2xl text-lg font-light text-muted-foreground">
             Odkryj naszą kolekcję realizacji w różnych kategoriach
@@ -88,7 +95,7 @@ export function VideoPortfolio() {
             >
               {/* Thumbnail */}
               <img
-                src={item.thumbnail}
+                src={item.thumbnail || getYouTubeThumbnail(item.videoUrl)}
                 alt={item.title}
                 className="h-full w-full object-cover transition-transform duration-700 group-hover:scale-105"
               />

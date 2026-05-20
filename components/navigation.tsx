@@ -58,7 +58,7 @@ export function Navigation() {
           href="#contact"
           className="hidden rounded-none border border-primary bg-transparent px-6 py-2 text-sm font-light tracking-wide text-primary transition-all hover:bg-primary hover:text-primary-foreground md:block"
         >
-          Skontaktuj Sie
+          Kontakt
         </a>
 
         {/* Mobile Menu Button */}
