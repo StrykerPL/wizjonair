@@ -31,7 +31,7 @@ export function AboutSection() {
                 najwyższą jakość i bezpieczeństwo.
               </p>
               <p className="font-light leading-relaxed">
-                Od luksusowych nieruchomości po produkcje komercyjne - każdy projekt to gwarancje jakości i kreatywności.
+                Od luksusowych nieruchomości po produkcje komercyjne - każdy projekt to gwarancja jakości i kreatywności.
               </p>
             </div>
 
@@ -40,13 +40,13 @@ export function AboutSection() {
               <div>
                 <p className="text-3xl font-light text-primary md:text-4xl">150+</p>
                 <p className="mt-2 text-sm font-light uppercase tracking-wider text-muted-foreground">
-                  Projektow
+                  Projektów
                 </p>
               </div>
               <div>
                 <p className="text-3xl font-light text-primary md:text-4xl">5+</p>
                 <p className="mt-2 text-sm font-light uppercase tracking-wider text-muted-foreground">
-                  Lat doświadczenia.
+                  Lat doświadczenia
                 </p>
               </div>
              
