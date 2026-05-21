@@ -14,8 +14,8 @@ export function ContactSection() {
               Stwórzmy coś razem!
             </h2>
             <p className="mb-12 max-w-lg text-lg font-light leading-relaxed text-muted-foreground">
-              Gotowy, by wynieść swój projekt na wyższy poziom dzięki ujeciom dronem? 
-              Skontaktuj się, by omówić swoją wizję.
+              Gotowy aby wynieść swój projekt na wyższy poziom dzięki ujeciom z drona? 
+              Skontaktuj się, by omówić swoją wizję!
             </p>
 
             {/* Contact Links */}
