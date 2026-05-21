@@ -27,7 +27,7 @@ export function Footer() {
               <Instagram className="h-5 w-5" />
             </a>
             <a
-              href="mailto:hello@wizjonair.com"
+              href="mailto:hello@wizjonair.pl"
               className="text-muted-foreground transition-colors hover:text-primary"
               aria-label="Email"
             >
@@ -37,7 +37,7 @@ export function Footer() {
 
           {/* Copyright */}
           <p className="text-sm font-light text-muted-foreground">
-            © {currentYear} Wizjonair. Wszelkie prawa zastrzezone.
+            © {currentYear} Wizjonair. Wszelkie prawa zastrzeżone.
           </p>
         </div>
       </div>
