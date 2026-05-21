@@ -58,13 +58,13 @@ export function HeroVideo() {
       {/* Content */}
       <div className="relative z-10 flex h-full flex-col items-center justify-center px-6 text-center">
         <p className="mb-4 text-sm font-medium uppercase tracking-[0.3em] text-primary">
-          Kinowe Ujecia FPV
+          Kinowe Ujęcia FPV
         </p>
         <h1 className="mb-6 text-5xl font-light tracking-tight text-foreground md:text-7xl lg:text-8xl">
           <span className="block">Wizjonair</span>
         </h1>
         <p className="max-w-2xl text-lg font-light leading-relaxed text-muted-foreground md:text-xl">
-          Tworzymy wyjatkowe perspektywy poprzez sztuke filmowania dronem
+          Wyjątkowe perspektywy
         </p>
 
         {/* Scroll Indicator */}
