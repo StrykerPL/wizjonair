@@ -6,8 +6,8 @@ export function AboutSection() {
           {/* Image */}
           <div className="relative aspect-[4/3] overflow-hidden">
             <img
-              src="https://images.unsplash.com/photo-1473968512647-3e447244af8f?q=80&w=2070&auto=format&fit=crop"
-              alt="FPV Drone in action"
+              src="/images/dji-avata-2-action.jpg"
+              alt="DJI Avata 2 FPV Drone"
               className="h-full w-full object-cover"
             />
             <div className="absolute inset-0 border border-primary/20" />
@@ -19,22 +19,19 @@ export function AboutSection() {
               O Nas
             </p>
             <h2 className="mb-6 text-4xl font-light tracking-tight text-foreground md:text-5xl">
-              Tworzymy Wizualne Historie
+              Tworzymy wizjonairskie historie
             </h2>
             <div className="space-y-6 text-muted-foreground">
               <p className="text-lg font-light leading-relaxed">
-                Wizjonair to premium studio cinematografii dronem FPV, ktore tworzy 
-                zapierajace dech materialy dla marek i nieruchomosci.
+                Wizjonair to studio, które tworzy zapierające dech materiały dla marek i nieruchomości.
               </p>
               <p className="font-light leading-relaxed">
-                Z wieloletnim doswiadczeniem w filmowaniu FPV i tradycyjna cinematografia dronem, 
-                specjalizujemy sie w tworzeniu immersyjnych doswiadczen wizualnych, ktore przyciagaja 
-                uwage i opowiadaja przekonujace historie. Nasz sprzet obejmuje niestandardowe rigi FPV 
-                i najnowsza technologie DJI dla niezrownanej wszechstronnosci.
+                Wieloletnie doświadczenie w filmowaniu dronami, montażu pozwala na tworzenie materiałów, 
+                które przyciągają uwagę i opowiadaję historie. Pracujemy na sprzęcie DJI, który gwarantuje 
+                najwyższą jakość i bezpieczeństwo.
               </p>
               <p className="font-light leading-relaxed">
-                Od luksusowych nieruchomosci po produkcje komercyjne - wnosimy kinowe podejscie 
-                do kazdego projektu, zapewniajac najwyzsze standardy jakosci i kreatywnosci.
+                Od luksusowych nieruchomości po produkcje komercyjne - każdy projekt to gwarancje jakości i kreatywności.
               </p>
             </div>
 

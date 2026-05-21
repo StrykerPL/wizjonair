@@ -44,7 +44,7 @@ export function HeroVideo() {
         muted
         loop
         playsInline
-        poster="https://images.unsplash.com/photo-1473968512647-3e447244af8f?q=80&w=2070&auto=format&fit=crop"
+        poster="/images/dji-air-3s-cinematic.jpg"
       >
         <source
           src="https://videos.pexels.com/video-files/2022395/2022395-uhd_2560_1440_30fps.mp4"

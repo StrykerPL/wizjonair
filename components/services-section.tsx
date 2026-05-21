@@ -1,35 +1,23 @@
-import { Clapperboard, Building2, Video, Smartphone, Factory } from "lucide-react"
+import { Clapperboard, Building2, Smartphone } from "lucide-react"
 
 const services = [
   {
     icon: Clapperboard,
-    title: "FPV Wnetrza",
+    title: "FPV Wnętrza",
     description:
-      "Immersyjne przeloty przez wnetrza, ktore ukazuja detale architektoniczne i przestrzen z kinowa precyzja.",
+      "Immersyjne przeloty przez wnętrza, które ukazują detale architektoniczne i przestrzeń z kinową precyzją.",
   },
   {
     icon: Building2,
-    title: "FPV Zewnetrza",
+    title: "FPV Outdoor",
     description:
-      "Dynamiczne ujecia zewnetrzne z niemozliwych katow, ukazujace skale i otoczenie nieruchomosci.",
-  },
-  {
-    icon: Video,
-    title: "Cinematic Air 3S",
-    description:
-      "Wysokorozdzielcza cinematografia z powietrza z DJI Air 3S dla zapierajacych dech ujec krajobrazowych i architektonicznych.",
+      "Dynamiczne ujęcia zewnętrzne ukazujące skalę i otoczenie nieruchomości.",
   },
   {
     icon: Smartphone,
     title: "Social Media Reels",
     description:
-      "Materialy w formacie pionowym zoptymalizowane pod Instagram, TikTok i inne platformy spolecznosciowe.",
-  },
-  {
-    icon: Factory,
-    title: "Przemyslowe",
-    description:
-      "Dokumentacja techniczna i materialy promocyjne dla produkcji, energetyki i infrastruktury.",
+      "Materiały w formacie pionowym zoptymalizowane pod Instagram, TikTok i inne platformy społecznościowe.",
   },
 ]
 
@@ -40,13 +28,13 @@ export function ServicesSection() {
         {/* Section Header */}
         <div className="mb-16 text-center">
           <p className="mb-4 text-sm font-medium uppercase tracking-[0.3em] text-primary">
-            Uslugi
+            Usługi
           </p>
           <h2 className="mb-6 text-4xl font-light tracking-tight text-foreground md:text-5xl">
-            Co Oferujemy
+            Co możemy Ci zaoferować
           </h2>
           <p className="mx-auto max-w-2xl text-lg font-light text-muted-foreground">
-            Profesjonalne uslugi cinematografii dronem dopasowane do Twoich potrzeb
+            Profesjonalne usługi dopasowane do Twoich potrzeb
           </p>
         </div>
 

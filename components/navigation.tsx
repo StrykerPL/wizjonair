@@ -5,7 +5,7 @@ import { Menu, X } from "lucide-react"
 
 const navItems = [
   { label: "Realizacje", href: "#work" },
-  { label: "Uslugi", href: "#services" },
+  { label: "Usługi", href: "#services" },
   { label: "O Nas", href: "#about" },
   { label: "Kontakt", href: "#contact" },
 ]
@@ -58,7 +58,7 @@ export function Navigation() {
           href="#contact"
           className="hidden rounded-none border border-primary bg-transparent px-6 py-2 text-sm font-light tracking-wide text-primary transition-all hover:bg-primary hover:text-primary-foreground md:block"
         >
-          Skontaktuj Sie
+          Kontakt
         </a>
 
         {/* Mobile Menu Button */}
