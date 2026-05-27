@@ -49,7 +49,7 @@ export function ContactSection() {
                     Whatsapp / Telefon
                   </p>
                   <p className="text-foreground transition-colors group-hover:text-primary">
-                    +4855555555
+                    +48455529877
                   </p>
                 </div>
               </a>
