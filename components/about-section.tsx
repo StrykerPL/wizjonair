@@ -19,19 +19,19 @@ export function AboutSection() {
               O Nas
             </p>
             <h2 className="mb-6 text-4xl font-light tracking-tight text-foreground md:text-5xl">
-              Tworzymy wizjonerskie historie
+              Tworzymy wizjonairskie historie
             </h2>
             <div className="space-y-6 text-muted-foreground">
               <p className="text-lg font-light leading-relaxed">
-                Wizjonair to studio, które tworzy materiały dla marek i nieruchomości.
+                Wizjonair to studio, które tworzy zapierające dech materiały dla marek i nieruchomości.
               </p>
               <p className="font-light leading-relaxed">
-                Wieloletnie doświadczenie w filmowaniu dronami i montażu filmów pozwala na tworzenie materiałów, 
-                które przyciągają uwagę. Pracujemy na sprzęcie DJI, który gwarantuje 
+                Wieloletnie doświadczenie w filmowaniu dronami, montażu pozwala na tworzenie materiałów, 
+                które przyciągają uwagę i opowiadaję historie. Pracujemy na sprzęcie DJI, który gwarantuje 
                 najwyższą jakość i bezpieczeństwo.
               </p>
               <p className="font-light leading-relaxed">
-                Od luksusowych nieruchomości po produkcje komercyjne - każdy projekt to gwarancja jakości i kreatywności.
+                Od luksusowych nieruchomości po produkcje komercyjne - każdy projekt to gwarancje jakości i kreatywności.
               </p>
             </div>
 
@@ -40,16 +40,21 @@ export function AboutSection() {
               <div>
                 <p className="text-3xl font-light text-primary md:text-4xl">150+</p>
                 <p className="mt-2 text-sm font-light uppercase tracking-wider text-muted-foreground">
-                  Projektów
+                  Projektow
                 </p>
               </div>
               <div>
                 <p className="text-3xl font-light text-primary md:text-4xl">5+</p>
                 <p className="mt-2 text-sm font-light uppercase tracking-wider text-muted-foreground">
-                  Lat doświadczenia
+                  Lat Dosw.
                 </p>
               </div>
-             
+              <div>
+                <p className="text-3xl font-light text-primary md:text-4xl">4K+</p>
+                <p className="mt-2 text-sm font-light uppercase tracking-wider text-muted-foreground">
+                  Rozdzielczosc
+                </p>
+              </div>
             </div>
           </div>
         </div>
