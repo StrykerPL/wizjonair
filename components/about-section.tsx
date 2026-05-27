@@ -26,16 +26,16 @@ export function AboutSection() {
                 Wizjonair to studio specjalizujące się w nowoczesnych realizacjach FPV i cinematic drone shots dla nieruchomości, 
                 hoteli, biznesu i marek. Łączymy dynamiczne przeloty FPV z klasycznymi ujęciami filmowymi, tworząc materiały, które budują emocje i wyróżniają się na tle standardowych produkcji.
               </p>
-              <p className="font-light leading-relaxed">
+              <p className="text-lg font-light leading-relaxed">
                 Pracujemy na profesjonalnym sprzęcie DJI, wykorzystując zarówno drony FPV, jak i klasyczne drony, 
                 co pozwala realizować płynne przeloty wewnątrz i na zewnątrz obiektów - od luksusowych apartamentów i restauracji po przestrzenie komercyjne oraz inwestycje premium.
               </p>
-              <p className="font-light leading-relaxed">
+              <p className="text-lg font-light leading-relaxed">
                 Wieloletnie doświadczenie w filmowaniu, montażu i pracy z obrazem pozwala nam tworzyć materiały dopracowane nie tylko technicznie, 
                 ale przede wszystkim wizualnie. Każdy projekt traktujemy indywidualnie, dbając o atmosferę, dynamikę i detale, które przyciągają uwagę odbiorcy już od pierwszych sekund.
               </p>
-<p className="font-light leading-relaxed">          Tworzymy treści do:
-<ul>
+<p className="text-lg font-light leading-relaxed">          Tworzymy treści do:
+<ul className="list-disc space-y-2 pl-6 text-muted-foreground">
 <li>prezentacji nieruchomości,</li>
 <li>hoteli i apartamentów,</li>
 <li>social media,</li>
