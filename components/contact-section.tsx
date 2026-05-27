@@ -5,10 +5,6 @@ import { Instagram, Mail, MapPin } from "lucide-react"
 export function ContactSection() {
   function handleSubmit(e: React.FormEvent<HTMLFormElement>) {
     e.preventDefault()
-    // chatgpt added
-    const [isSuccess, setIsSuccess] = useState(false)
-    import { useState } from "react"
-    //
     const formData = new FormData(e.currentTarget)
     const name = formData.get("name") as string
     const email = formData.get("email") as string
@@ -91,7 +87,7 @@ export function ContactSection() {
             </div>
           </div>
 
-          {/* Right Column - Form */}
+          {/* Right Column - Form }
           <div className="border border-border bg-background p-8 lg:p-12">
             {isSuccess ? (
               <div className="flex h-full flex-col items-center justify-center text-center">
@@ -184,6 +180,7 @@ export function ContactSection() {
             )}
           </div>
         </div>
+        */
       </div>
     </section>
   )
