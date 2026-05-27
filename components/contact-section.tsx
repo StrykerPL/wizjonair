@@ -1,6 +1,6 @@
 "use client"
 
-import { Instagram, Mail, MapPin } from "lucide-react"
+import { Instagram, Mail, MessageCircle, MapPin } from "lucide-react"
 
 export function ContactSection() {
   function handleSubmit(e: React.FormEvent<HTMLFormElement>) {
@@ -34,7 +34,27 @@ export function ContactSection() {
             </p>
 
             {/* Contact Links */}
-            <div className="space-y-6">
+                        <div className="space-y-6">
+              <a
+                href="https://instagram.com/wizjonair"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="group flex items-center gap-4 transition-colors"
+              >
+                <div className="flex h-12 w-12 items-center justify-center border border-border transition-all group-hover:border-primary group-hover:bg-primary/10">
+                  <Instagram className="h-5 w-5 text-muted-foreground transition-colors group-hover:text-primary" />
+                </div>
+                <div>
+                  <p className="text-sm font-light uppercase tracking-wider text-muted-foreground">
+                    Instagram
+                  </p>
+                  <p className="text-foreground transition-colors group-hover:text-primary">
+                    @wizjonair
+                  </p>
+                </div>
+              </a>
+                          
+     
               <a
                 href="https://instagram.com/wizjonair"
                 target="_blank"
