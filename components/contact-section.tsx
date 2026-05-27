@@ -4,18 +4,46 @@ import { Instagram, Mail, MessageCircle, MapPin, Loader2, CheckCircle } from "lu
 import { useState } from "react"
 
 export function ContactSection() {
-  function handleSubmit(e: React.FormEvent<HTMLFormElement>) {
-    e.preventDefault()
-    const formData = new FormData(e.currentTarget)
-    const name = formData.get("name") as string
-    const email = formData.get("email") as string
-    const message = formData.get("message") as string
+  const [isSubmitting, setIsSubmitting] = useState(false)
+  const [isSuccess, setIsSuccess] = useState(false)
+  const [error, setError] = useState("")
+  
+async function handleSubmit(e: React.FormEvent<HTMLFormElement>) {
+  e.preventDefault()
 
-    const subject = encodeURIComponent(`Zapytanie od ${name}`)
-    const body = encodeURIComponent(`Imię i nazwisko: ${name}\nEmail: ${email}\n\nWiadomość:\n${message}`)
-    
-    window.location.href = `mailto:hello@wizjonair.pl?subject=${subject}&body=${body}`
+  setIsSubmitting(true)
+  setError("")
+
+  const formData = new FormData(e.currentTarget)
+
+  const name = formData.get("name")
+  const email = formData.get("email")
+  const message = formData.get("message")
+
+  try {
+    const response = await fetch("/api/contact", {
+      method: "POST",
+      headers: {
+        "Content-Type": "application/json",
+      },
+      body: JSON.stringify({
+        name,
+        email,
+        message,
+      }),
+    })
+
+    if (!response.ok) {
+      throw new Error("Błąd wysyłki")
+    }
+
+    setIsSuccess(true)
+  } catch (err) {
+    setError("Nie udało się wysłać wiadomości.")
+  } finally {
+    setIsSubmitting(false)
   }
+}
 
   return (
     <section id="contact" className="bg-card py-24 lg:py-32">
