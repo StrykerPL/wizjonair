@@ -16,23 +16,34 @@ export function AboutSection() {
           {/* Content */}
           <div>
             <p className="mb-4 text-sm font-medium uppercase tracking-[0.3em] text-primary">
-              O Nas
+              O nas
             </p>
-            <h2 className="mb-6 text-4xl font-light tracking-tight text-foreground md:text-5xl">
-              Tworzymy wizjonerskie historie
+            <h2 className="mb-6 text-4xl font-medium tracking-tight text-foreground md:text-5xl">
+              Tworzymy ujęcia, które zatrzymują uwagę.
             </h2>
             <div className="space-y-6 text-muted-foreground">
               <p className="text-lg font-light leading-relaxed">
-                Wizjonair to studio, które tworzy materiały dla marek i nieruchomości.
+                Wizjonair to studio specjalizujące się w nowoczesnych realizacjach FPV i cinematic drone shots dla nieruchomości, 
+                hoteli, biznesu i marek. Łączymy dynamiczne przeloty FPV z klasycznymi ujęciami filmowymi, tworząc materiały, które budują emocje i wyróżniają się na tle standardowych produkcji.
               </p>
               <p className="font-light leading-relaxed">
-                Wieloletnie doświadczenie w filmowaniu dronami i montażu filmów pozwala na tworzenie materiałów, 
-                które przyciągają uwagę. Pracujemy na sprzęcie DJI, który gwarantuje 
-                najwyższą jakość i bezpieczeństwo.
+                Pracujemy na profesjonalnym sprzęcie DJI, wykorzystując zarówno drony FPV, jak i klasyczne drony, 
+                co pozwala realizować płynne przeloty wewnątrz i na zewnątrz obiektów - od luksusowych apartamentów i restauracji po przestrzenie komercyjne oraz inwestycje premium.
               </p>
               <p className="font-light leading-relaxed">
-                Od luksusowych nieruchomości po produkcje komercyjne - każdy projekt to gwarancja jakości i kreatywności.
+                Wieloletnie doświadczenie w filmowaniu, montażu i pracy z obrazem pozwala nam tworzyć materiały dopracowane nie tylko technicznie, 
+                ale przede wszystkim wizualnie. Każdy projekt traktujemy indywidualnie, dbając o atmosferę, dynamikę i detale, które przyciągają uwagę odbiorcy już od pierwszych sekund.
               </p>
+<p className="font-light leading-relaxed">          Tworzymy treści do:
+<ul>
+<li>prezentacji nieruchomości,</li>
+<li>hoteli i apartamentów,</li>
+<li>social media,</li>
+<li>kampanii reklamowych,</li>
+<li>materiałów promocyjnych i wizerunkowych.</li>
+</ul>
+Od dynamicznych przelotów one-take FPV po spokojne cinematic shots — naszym celem jest pokazanie przestrzeni z perspektywy, której nie da się osiągnąć tradycyjną kamerą.
+</p>
             </div>
 
             {/* Stats */}
