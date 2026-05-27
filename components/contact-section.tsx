@@ -88,5 +88,9 @@ export function ContactSection() {
           </div>
 
           {/* Right Column - Form */ }
-       
+               </div>
+      </div>
+    </section>
+  )
+}
   
