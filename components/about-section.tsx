@@ -41,8 +41,8 @@ export function AboutSection() {
 <li>social media,</li>
 <li>kampanii reklamowych,</li>
 <li>materiałów promocyjnych i wizerunkowych.</li>
-</ul>
-Od dynamicznych przelotów one-take FPV po spokojne cinematic shots — naszym celem jest pokazanie przestrzeni z perspektywy, której nie da się osiągnąć tradycyjną kamerą.
+</ul></p>
+<p className="text-lg font-light leading-relaxed">Od dynamicznych przelotów <i>one-take FPV</i> po spokojne <i>cinematic shots</i> - naszym celem jest pokazanie przestrzeni z perspektywy, której nie da się osiągnąć tradycyjną kamerą.
 </p>
             </div>
 
