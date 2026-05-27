@@ -36,7 +36,7 @@ export function ContactSection() {
             {/* Contact Links */}
                         <div className="space-y-6">
               <a
-                href="tel:"
+                href="https://wa.me/48455529877"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="group flex items-center gap-4 transition-colors"
