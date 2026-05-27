@@ -44,10 +44,10 @@ export function HeroVideo() {
         muted
         loop
         playsInline
-        poster="/images/dji-air-3s-cinematic.jpg"
+        poster="/images/prev.png?q=80&w=2070&auto=format&fit=crop"
       >
         <source
-          src="https://videos.pexels.com/video-files/2022395/2022395-uhd_2560_1440_30fps.mp4"
+          src="/videos/800lecie.mp4"
           type="video/mp4"
         />
       </video>
@@ -64,14 +64,14 @@ export function HeroVideo() {
           <span className="block">Wizjonair</span>
         </h1>
         <p className="max-w-2xl text-lg font-light leading-relaxed text-muted-foreground md:text-xl">
-          Wyjątkowe perspektywy
+          Tworzymy wyjątkowe filmy z perspektywy drona. Innowacyjna forma prezentacji nieruchomości i Twojego biznesu.
         </p>
 
         {/* Scroll Indicator */}
         <div className="absolute bottom-12 left-1/2 -translate-x-1/2">
           <div className="flex flex-col items-center gap-2">
             <span className="text-xs uppercase tracking-widest text-muted-foreground">
-              Zobacz Realizacje
+              Zobacz realizacje
             </span>
             <div className="h-12 w-px bg-primary/50" />
           </div>
