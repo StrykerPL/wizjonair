@@ -44,10 +44,10 @@ export function HeroVideo() {
         muted
         loop
         playsInline
-        poster="https://images.unsplash.com/photo-1473968512647-3e447244af8f?q=80&w=2070&auto=format&fit=crop"
+        poster="http://fotografopole.pl/prev.png?q=80&w=2070&auto=format&fit=crop"
       >
         <source
-          src="https://videos.pexels.com/video-files/2022395/2022395-uhd_2560_1440_30fps.mp4"
+          src="http://fotografopole.pl/800lecie.mp4"
           type="video/mp4"
         />
       </video>
