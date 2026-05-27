@@ -176,9 +176,9 @@ export function ContactSection() {
                     "Wyślij Wiadomość"
                   )}
                 </button>
-              </form>
+              </form>*/
             )}
-          </div> */
+          </div> 
         </div>
        
       </div>
