@@ -70,7 +70,7 @@ export function HeroVideo() {
         {/* Scroll Indicator */}
         <div className="absolute bottom-12 left-1/2 -translate-x-1/2">
           <div className="flex flex-col items-center gap-2">
-            <span className="text-xs uppercase tracking-widest text-muted-foreground">
+            <span className="text-xs uppercase tracking-widest text-muted-foreground font-extralight">
               Zobacz realizacje
             </span>
             <div className="h-12 w-px bg-primary/50" />
