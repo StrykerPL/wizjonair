@@ -45,6 +45,14 @@ const portfolioItems: PortfolioItem[] = [
     location: "Nowe Siołkowice",
     description: "FPV one take, bez cięć.",
   },
+  {
+    id: "1",
+    title: "Kąpielisko w Nowych Siołkowicach tmp2",
+    category: "fpv-exteriors",
+    videoUrl: "https://youtu.be/RkgRRS9xMk4",
+    location: "Nowe Siołkowice",
+    description: "FPV one take, bez cięć 2.",
+  },
 ]
 
 // Share button component
