@@ -1,6 +1,7 @@
 "use client"
 
-import { Instagram, Mail, MessageCircle, MapPin } from "lucide-react"
+import { Instagram, Mail, MessageCircle, MapPin, Loader2, CheckCircle } from "lucide-react"
+import { useState } from "react"
 
 export function ContactSection() {
   function handleSubmit(e: React.FormEvent<HTMLFormElement>) {
