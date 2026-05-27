@@ -37,7 +37,7 @@ export function Footer() {
 
           {/* Copyright */}
           <p className="text-sm font-light text-muted-foreground">
-            © {currentYear} Wizjonair. Wszelkie prawa zastrzezone.
+            © {currentYear} Wizjonair. Wszelkie prawa zastrzeżone.
           </p>
         </div>
       </div>

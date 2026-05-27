@@ -6,8 +6,8 @@ export function AboutSection() {
           {/* Image */}
           <div className="relative aspect-[4/3] overflow-hidden">
             <img
-              src="https://images.unsplash.com/photo-1473968512647-3e447244af8f?q=80&w=2070&auto=format&fit=crop"
-              alt="FPV Drone in action"
+              src="/images/dji-avata-2-action.jpg"
+              alt="DJI Avata 2 FPV Drone"
               className="h-full w-full object-cover"
             />
             <div className="absolute inset-0 border border-primary/20" />
