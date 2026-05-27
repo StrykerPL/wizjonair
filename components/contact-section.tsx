@@ -5,7 +5,10 @@ import { Instagram, Mail, MapPin } from "lucide-react"
 export function ContactSection() {
   function handleSubmit(e: React.FormEvent<HTMLFormElement>) {
     e.preventDefault()
-    
+    // chatgpt added
+    const [isSuccess, setIsSuccess] = useState(false)
+    import { useState } from "react"
+    //
     const formData = new FormData(e.currentTarget)
     const name = formData.get("name") as string
     const email = formData.get("email") as string
