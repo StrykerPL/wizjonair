@@ -46,12 +46,12 @@ const portfolioItems: PortfolioItem[] = [
     description: "FPV one take, bez cięć.",
   },
   {
-    id: "1",
-    title: "Kąpielisko w Nowych Siołkowicach tmp2",
-    category: "fpv-exteriors",
-    videoUrl: "https://youtu.be/RkgRRS9xMk4",
-    location: "Nowe Siołkowice",
-    description: "FPV one take, bez cięć 2.",
+    id: "2",
+    title: "Most Halupczoka w Opolu",
+    category: "social-reels",
+    videoUrl: "https://youtube.com/shorts/IR_5xmLwH20",
+    location: "Opole",
+    description: "FPV one take, bez cięć.",
   },
 ]
 
