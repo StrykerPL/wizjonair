@@ -47,10 +47,10 @@ const portfolioItems: PortfolioItem[] = [
   },
   {
     id: "2",
-    title: "Most Halupczoka w Opolu",
+    title: "Under the bridge",
     category: "social-reels",
-    videoUrl: "https://youtube.com/shorts/IR_5xmLwH20",
-    location: "Opole",
+    videoUrl: "https://www.youtube.com/shorts/5sQLk65NhY4",
+    location: "Most Halupczoka w Opolu",
     description: "FPV one take, bez cięć.",
   },
 ]
