@@ -56,6 +56,14 @@ const portfolioItems: PortfolioItem[] = [
     location: "Most Halupczoka w Opolu",
     description: "FPV one take, bez cięć.",
   },
+    {
+    id: "3",
+    title: "Tyle słońca w całym mieście",
+    category: "social-reels",
+    videoUrl: "https://www.youtube.com/shorts/qebLHNp-ULI",
+    location: "Kanał Młynówka w Opolu",
+    description: "FPV one take, bez cięć.",
+  },
 ]
 function isYouTubeShort(url: string): boolean {
   return url.includes("/shorts/")
