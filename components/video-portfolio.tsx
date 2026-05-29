@@ -15,16 +15,19 @@ interface PortfolioItem {
 
 // Helper function to extract YouTube video ID
 function getYouTubeVideoId(url: string): string | null {
-  const regExp = /^.*(youtu.be\/|v\/|u\/\w\/|embed\/|watch\?v=|&v=)([^#&?]*).*/
+  const regExp =
+    /(?:youtube\.com\/(?:shorts\/|watch\?v=|embed\/)|youtu\.be\/)([^#&?/\n]{11})/
+
   const match = url.match(regExp)
-  return match && match[2].length === 11 ? match[2] : null
+
+  return match ? match[1] : null
 }
 
 // Helper function to generate YouTube thumbnail
 function getYouTubeThumbnail(url: string): string {
   const videoId = getYouTubeVideoId(url)
   if (videoId) {
-    return `https://img.youtube.com/vi/${videoId}/maxresdefault.jpg`
+    return `https://img.youtube.com/vi/${videoId}/hqdefault.jpg`
   }
   return ""
 }
@@ -46,14 +49,25 @@ const portfolioItems: PortfolioItem[] = [
     description: "FPV one take, bez cięć.",
   },
   {
-    id: "1",
-    title: "Kąpielisko w Nowych Siołkowicach tmp2",
-    category: "fpv-exteriors",
-    videoUrl: "https://youtu.be/RkgRRS9xMk4",
-    location: "Nowe Siołkowice",
-    description: "FPV one take, bez cięć 2.",
+    id: "2",
+    title: "Under the bridge",
+    category: "social-reels",
+    videoUrl: "https://www.youtube.com/shorts/5sQLk65NhY4",
+    location: "Most Halupczoka w Opolu",
+    description: "FPV one take, bez cięć.",
+  },
+    {
+    id: "3",
+    title: "Tyle słońca w całym mieście",
+    category: "social-reels",
+    videoUrl: "https://www.youtube.com/shorts/qebLHNp-ULI",
+    location: "Kanał Młynówka w Opolu",
+    description: "FPV one take, bez cięć.",
   },
 ]
+function isYouTubeShort(url: string): boolean {
+  return url.includes("/shorts/")
+}
 
 // Share button component
 function ShareButton({ 
@@ -220,7 +234,14 @@ function VideoModal({
         className="relative z-10 w-full max-w-6xl px-6"
         onClick={(e) => e.stopPropagation()}
       >
-        <div className="relative aspect-video w-full overflow-hidden border border-border/30 bg-black shadow-2xl">
+
+          <div
+  className={`relative overflow-hidden border border-border/30 bg-black shadow-2xl ${
+    isYouTubeShort(videoUrl)
+      ? "mx-auto aspect-[9/16] max-w-md"
+      : "aspect-video w-full"
+  }`}
+>
           <iframe
             src={`https://www.youtube.com/embed/${videoId}?autoplay=1&rel=0&modestbranding=1`}
             title={title}
