@@ -64,6 +64,32 @@ const portfolioItems: PortfolioItem[] = [
     location: "Kanał Młynówka w Opolu",
     description: "FPV one take, bez cięć.",
   },
+    {
+    id: "4",
+    title: "Hotel Zacisze",
+    category: "fpv-exteriors",
+    videoUrl: "https://www.youtube.com/watch?v=E3mDTkiB3Zo",
+    location: "Turawa",
+    description: "Okolice hotelu z basenem, placem zabaw, miejscem na grilla",
+  },
+     {
+    id: "5",
+    title: "Hotel Zacisze - Apartament i pokoje hotelowe",
+    category: "fpv-interiors",
+    videoUrl: "https://youtu.be/VThL-e4pkcw",
+    location: "Turawa",
+    description: "Jeden z apartamentów oraz przelot przez dwa pokoje hotelowe",
+  },
+   {
+    id: "6",
+    title: "Hotel Zacisze - Strefa SPA",
+    category: "fpv-interiors",
+    videoUrl: "https://youtu.be/4fhk3-jumMc",
+    location: "Turawa",
+    description: "Strefa SPA Hotelu Zacisze w Turawie",
+  },
+
+  
 ]
 function isYouTubeShort(url: string): boolean {
   return url.includes("/shorts/")
