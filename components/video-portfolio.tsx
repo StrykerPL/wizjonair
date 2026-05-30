@@ -41,7 +41,7 @@ const categories = [
 
 const portfolioItems: PortfolioItem[] = [
   {
-    id: "1",
+    id: "6",
     title: "Kąpielisko w Nowych Siołkowicach",
     category: "fpv-exteriors",
     videoUrl: "https://youtu.be/RkgRRS9xMk4",
@@ -49,7 +49,7 @@ const portfolioItems: PortfolioItem[] = [
     description: "FPV one take, bez cięć.",
   },
   {
-    id: "2",
+    id: "5",
     title: "Under the bridge",
     category: "social-reels",
     videoUrl: "https://www.youtube.com/shorts/5sQLk65NhY4",
@@ -57,7 +57,7 @@ const portfolioItems: PortfolioItem[] = [
     description: "FPV one take, bez cięć.",
   },
     {
-    id: "3",
+    id: "4",
     title: "Tyle słońca w całym mieście",
     category: "social-reels",
     videoUrl: "https://www.youtube.com/shorts/qebLHNp-ULI",
@@ -65,7 +65,7 @@ const portfolioItems: PortfolioItem[] = [
     description: "FPV one take, bez cięć.",
   },
     {
-    id: "4",
+    id: "1",
     title: "Hotel Zacisze",
     category: "fpv-exteriors",
     videoUrl: "https://www.youtube.com/watch?v=E3mDTkiB3Zo",
@@ -73,7 +73,7 @@ const portfolioItems: PortfolioItem[] = [
     description: "Okolice hotelu z basenem, placem zabaw, miejscem na grilla",
   },
      {
-    id: "5",
+    id: "2",
     title: "Hotel Zacisze - Apartament i pokoje hotelowe",
     category: "fpv-interiors",
     videoUrl: "https://youtu.be/VThL-e4pkcw",
@@ -81,7 +81,7 @@ const portfolioItems: PortfolioItem[] = [
     description: "Jeden z apartamentów oraz przelot przez dwa pokoje hotelowe",
   },
    {
-    id: "6",
+    id: "3",
     title: "Hotel Zacisze - Strefa SPA",
     category: "fpv-interiors",
     videoUrl: "https://youtu.be/4fhk3-jumMc",
