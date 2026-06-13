@@ -47,7 +47,7 @@ export function HeroVideo() {
         poster="/images/prev.png?q=80&w=2070&auto=format&fit=crop"
       >
         <source
-          src="/videos/800lecie.mp4"
+          src="/videos/h.mp4"
           type="video/mp4"
         />
       </video>
